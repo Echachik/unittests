@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Calculator" verbose="1" parallel="tests" thread-count="3">
+    <test name="Regression" preserve-order="false">
+        <groups>
+            <run>
+                <include name="config"></include>
+                <include name="positive"></include>
+                <include name="double"></include>
+                <include name="long"></include>
+                <include name="negative"></include>
+            </run>
+
+        </groups>
+        <classes>
+            <class name="CalcCosTest"/>
+            <class name="CalcCtgTest"/>
+            <class name="CalcDivDoubleTest"/>
+            <class name="CalcDivLongTest"/>
+            <class name="CalcIsNegativeTest"/>
+            <class name="CalcMultLongTest"/>
+            <class name="CalcPowTest"/>
+            <class name="CalcSinTest"/>
+            <class name="CalcSqrtTest"/>
+            <class name="CalcSubLongTest"/>
+            <class name="CalcSubDoubleTest"/>
+            <class name="CalcSumDoubleTest"/>
+            <class name="CalcSumLongTest"/>
+            <class name="CalcTangTest"/>
+            <class name="CalctIsPositiveTest"/>
+            <class name="CalcMultDoubleTest"/>
+        </classes>
+    </test>
+</suite>
